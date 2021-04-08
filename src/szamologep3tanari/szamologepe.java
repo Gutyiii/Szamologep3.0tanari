@@ -6,6 +6,21 @@ public class szamologepe extends javax.swing.JFrame {
         initComponents();
     }
 
+    
+    private void osztas() {
+        lblFeladat.setText("12 : 3 =");
+    }
+    
+    private void osztasEllenorzes() {
+        int szam = Integer.parseInt(txtEredmeny.getText());
+        
+        if (szam == 4) {
+            lblValasz.setText("Helyes válasz:" + " Jó válasz");
+        } else {
+            lblValasz.setText("Helyes válasz:" + " Rossz válasz");
+        }
+    }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -95,6 +110,11 @@ public class szamologepe extends javax.swing.JFrame {
         pnlGyakorlas.setBorder(javax.swing.BorderFactory.createTitledBorder("Gyakorlas"));
 
         btnEllenorzes.setText("Ellenőrzés");
+        btnEllenorzes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEllenorzesActionPerformed(evt);
+            }
+        });
 
         txtEredmeny.setText("Válasz");
 
@@ -241,6 +261,11 @@ public class szamologepe extends javax.swing.JFrame {
         mnuMuveletek.add(mnuMuveletekSzorzas);
 
         mnuMuveletekOsztas.setText("Osztás");
+        mnuMuveletekOsztas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuMuveletekOsztasActionPerformed(evt);
+            }
+        });
         mnuMuveletek.add(mnuMuveletekOsztas);
 
         jMenuBar1.add(mnuMuveletek);
@@ -280,6 +305,14 @@ public class szamologepe extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mnuMuveletekOsztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuMuveletekOsztasActionPerformed
+        osztas();
+    }//GEN-LAST:event_mnuMuveletekOsztasActionPerformed
+
+    private void btnEllenorzesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEllenorzesActionPerformed
+        osztasEllenorzes();
+    }//GEN-LAST:event_btnEllenorzesActionPerformed
 
     /**
      * @param args the command line arguments
