@@ -6,21 +6,26 @@ public class szamologepe extends javax.swing.JFrame {
         initComponents();
     }
 
-    
     private void osztas() {
         lblFeladat.setText("12 : 3 =");
     }
-    
+
     private void osztasEllenorzes() {
         int szam = Integer.parseInt(txtEredmeny.getText());
-        
-        if (szam == 4) {
-            lblValasz.setText("Helyes válasz:" + " Jó válasz");
+        btnEllenorzes.setEnabled(true);
+        if (!(szam == 4)) {
+            lblValasz.setText("Rossz válasz");
+            txtEredmeny.setText("");
+        } else if (txtEredmeny.getText().equals("")) {
+            lblValasz.setText("Írj be valamit");
+            txtEredmeny.setText("");
         } else {
-            lblValasz.setText("Helyes válasz:" + " Rossz válasz");
+            lblValasz.setText("Jó válasz");
+            btnEllenorzes.setEnabled(false);
         }
+
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
