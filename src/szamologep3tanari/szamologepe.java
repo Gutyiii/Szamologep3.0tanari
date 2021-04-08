@@ -59,6 +59,10 @@ public class szamologepe extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
 
         jInternalFrame1.setVisible(true);
 
@@ -255,6 +259,19 @@ public class szamologepe extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Műveletek");
+
+        jMenuItem4.setText("Összeadás");
+        jMenu2.add(jMenuItem4);
+
+        jMenuItem5.setText("Kivonás");
+        jMenu2.add(jMenuItem5);
+
+        jMenuItem6.setText("Szorzás");
+        jMenu2.add(jMenuItem6);
+
+        jMenuItem7.setText("Osztás");
+        jMenu2.add(jMenuItem7);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -357,6 +374,10 @@ public class szamologepe extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPopupMenu.Separator jSeparator1;
